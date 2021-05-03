@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con JS | Versión 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <center>
+        <form name="Calculadora" action="">
+
+            <table border="3">
+
+                <tr> <!-- Pantalla dinámica -->
+                    <td colspan="5"><input type="text" name="TextBoxNumeros" value="0" disabled></td>
+                </tr>
+
+                <tr> <!-- Primera Fila de Teclas -->
+                    <td><input type="button" value="1" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="2" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="3" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="+" onclick="ingresarOperacion(this.value)"></td>
+                    <td><input type="button" value="-" onclick="ingresarOperacion(this.value)"></td>
+                </tr>
+
+                <tr> <!-- Segunda Fila de Teclas -->
+                    <td><input type="button" value="4" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="5" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="6" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="*" onclick="ingresarOperacion(this.value)"></td>
+                    <td><input type="button" value="/" onclick="ingresarOperacion(this.value)"></td>
+                </tr>
+
+                <tr> <!-- Tercera Fila de Teclas -->
+                    <td><input type="button" value="7" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="8" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="9" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="^" onclick="ingresarOperacion('**')"></td>
+                    <td><input type="button" value="√" onclick="raizCuadrada()"></td>
+                </tr>
+
+                <tr> <!-- Cuarta Fila de Teclas -->
+                    <td><input type="button" value="0" onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="." onclick="ingresarNumero(this.value)"></td>
+                    <td><input type="button" value="C" onclick="limpiarPantalla()"></td>
+                    <td colspan="2"><input type="button" value="    =   " onclick="resultado()"></td>
+                </tr>
+
+            </table><!-- Fin Table -->
+
+        </form><!-- Fin Form -->
+    </center> <!-- Fin Center -->
+    
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
